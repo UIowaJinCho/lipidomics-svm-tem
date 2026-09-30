@@ -38,5 +38,3 @@ for npy_file in npy_files:
 
     znorm_data = (log_data - mean) / sd
     np.save(os.path.join(ZNORM_DIR, base), znorm_data)
-
-    print('wrote %s' % base)
